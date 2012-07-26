@@ -1,0 +1,35 @@
+--- 
+http_interactions: 
+- request: 
+    method: post
+    uri: https://api.bufferapp.com/1/updates/create.json
+    body: 
+      string: access_token=&profile_ids[]=&text=doesnotmatter
+    headers: {}
+
+  response: 
+    status: 
+      code: 401
+      message: Not Authorized
+    headers: 
+      server: 
+      - Apache/2.2.22 (Amazon)
+      date: 
+      - Thu, 26 Jul 2012 15:49:52 GMT
+      vary: 
+      - Accept-Encoding,User-Agent
+      set-cookie: 
+      - bufferapp_ci_session=YFe3Qp9hzump9RH1%2BdkI0jTaNVLMb3v1zQp6fIvWNoXCb8KZRZIN0Dny67x754Oz53N3LGrqEP5jVAtRs1fbbA11EJFiCN1vhVlTGi3UImSp%2BeLOqGZ%2BJHLsHW5D1DGRSQpZGQM1oyayCW0Fc4Xx5WQLC0gxJpKNS8Bl4XhPAFOZ0WfMCbheEJIXEoJP03u93nGeJMoHPI78P6cEZ0adAhT9khR359KXz2fRvkaMQctlOyVRseFdyTHVxuW%2FPbGHnc4X4ow0RxdpBRPqyNpTpBu5yQn6pjTyRt75oq78Hzg%3D; expires=Sat, 25-Aug-2012 15:49:52 GMT; path=/
+      content-type: 
+      - application/json;charset=UTF-8
+      x-powered-by: 
+      - PHP/5.3.13
+      connection: 
+      - Close
+      content-length: 
+      - "48"
+    body: 
+      string: "{\"error\":\"The provided access token is invalid\"}"
+    http_version: "1.1"
+  recorded_at: Thu, 26 Jul 2012 15:49:52 GMT
+recorded_with: VCR 2.2.4

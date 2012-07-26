@@ -1,0 +1,37 @@
+--- 
+http_interactions: 
+- request: 
+    method: post
+    uri: https://api.bufferapp.com/1/updates/create.json
+    body: 
+      string: access_token=1%2F8c33ad941402be1cc78956f0739a9070&profile_ids[]=<PROFILE_ID>&text=stuff%20and%20junk%201343317792
+    headers: {}
+
+  response: 
+    status: 
+      code: 200
+      message: Awesome
+    headers: 
+      server: 
+      - Apache/2.2.22 (Amazon)
+      date: 
+      - Thu, 26 Jul 2012 15:49:53 GMT
+      vary: 
+      - Accept-Encoding,User-Agent
+      set-cookie: 
+      - bufferapp_ci_session=%2FJv3O6YKvkzBDy77XN8vbupS8vSMHgGmYQNYGCFEJSgaMtyOXptOlh85WRsCWHbL8HPJbKJ506nm0XVb7sjxtB9W9XRUVW6kaaLvAEXYiQis3mbxUSv7%2F3VlXC26nSnoomtBTT%2Bm4Qte69WjIkZZVxQ39%2FUzklUZ%2FOR2VN5%2FO2W%2FKxobrtw%2BxIOpIPe29UmKh4FD0d109mjfG8%2B1CuzEsXCBTziDICLJGJwtN%2FTZqYaIIn6dPksmCznqcGN9wMmbwNt32l%2BN%2BlnknOVhOoQe7zmIbRaTm1ici9vxVnElOnc%3D; expires=Sat, 25-Aug-2012 15:49:53 GMT; path=/
+      - bufferapp_ci_session=DxLSMBEYqtsesCquUrl1%2BaEaLm0jKPOC%2FBPyVhgpJkaLDk7QPmJ%2FZ9IH%2BavfN4rRmvSG4TMoy8niglK4oU4rf9yUaM2yU6rM%2BccILP9LRj78h5w2fdngeGCa38tQUSn7K80VsFKXRdDZR5kEF04Bm08oMxRsmd9owyvB56PBTtn7RWLNcTqBax3mIvKjZOxODSfO26Ly6Syo6m5ifJC6Av59X2%2BAatnS3WArtrY5ZLCIvXjlUboxBP%2FlTvp8oqPLxHcDRj%2FVP3a5W1eQ9Hhydyel%2Fox%2BvOxiTw9rChfNXv0%3D; expires=Sat, 25-Aug-2012 15:49:53 GMT; path=/
+      - bufferapp_ci_session=vQz2iStK7TXICvHxGqMD0LGtjxo9qhlp5FZ1yrbHBZtmX4L0h9b0WV3Kif9hHtT5O9uLz1FLkNt8X6RJgkF7g5lgpL3lkbtNcvfpr8Gikbouxnf7LRXpYeS6t2hjmnou3y5N35f4b7djpwfxaDjSecyRETu0NTKb35BauX%2F3kAbz5k8Ws6PvljDQJnJWAzhBV7XZTaWG0CxAKv%2FR3wUsBuB3lGLveTW5b1VMMr6r3ICVpRr%2FPAg5iHCOB8rCnX0HbE1SZrzZK5yXeAM%2F%2BqNxsEawuNTev%2Bh2OVS26MrcYog%3D; expires=Sat, 25-Aug-2012 15:49:53 GMT; path=/
+      content-type: 
+      - application/json;charset=UTF-8
+      x-powered-by: 
+      - PHP/5.3.13
+      connection: 
+      - Close
+      content-length: 
+      - "567"
+    body: 
+      string: "{\"success\":true,\"message\":\"One more tweet in your Buffer. Keep it topped up!\",\"updates\":[{\"_id\":\"501167219190194a33000017\",\"client_id\":\"50105bb8a45f0fa449000042\",\"created_at\":1343317793,\"day\":\"Saturday 28th July\",\"due_at\":1343499060,\"due_time\":\"2:11 pm\",\"id\":\"501167219190194a33000017\",\"profile_id\":\"<PROFILE_ID>\",\"profile_service\":\"twitter\",\"status\":\"buffer\",\"text\":\"stuff and junk 1343317792\",\"text_formatted\":\"stuff and junk 1343317792\",\"updated_at\":1343317793,\"user_id\":\"4f201de1512f7e9566000012\",\"via\":\"api\"}],\"buffer_percentage\":7,\"buffer_count\":14}"
+    http_version: "1.1"
+  recorded_at: Thu, 26 Jul 2012 15:49:53 GMT
+recorded_with: VCR 2.2.4

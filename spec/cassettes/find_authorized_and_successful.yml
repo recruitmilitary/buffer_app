@@ -1,0 +1,69 @@
+--- 
+http_interactions: 
+- request: 
+    method: post
+    uri: https://api.bufferapp.com/1/updates/create.json
+    body: 
+      string: access_token=1%2F8c33ad941402be1cc78956f0739a9070&profile_ids[]=<PROFILE_ID>&text=hello%20world%201343317793
+    headers: {}
+
+  response: 
+    status: 
+      code: 200
+      message: Awesome
+    headers: 
+      server: 
+      - Apache/2.2.22 (Amazon)
+      date: 
+      - Thu, 26 Jul 2012 15:49:53 GMT
+      vary: 
+      - Accept-Encoding,User-Agent
+      set-cookie: 
+      - bufferapp_ci_session=cIC9O6ikttB7UXwwt3ExfpObd%2FYeVVF9%2F7jcgCJxJZuu%2BZeT4R2Qac3tJu8VJaCTIo%2B8LVaCkJyOrrPPJZQFqeJ6sPj1d9sJoZ2%2FC8VYhCFydrKcPyyp9HA2GugzWYOiRe%2Fz98HZPiSE4mDkZk4lIxgMVTvP0Ux%2B2F%2Bqcpx%2FDG6sqlS%2BpuDQO0GzSWRc1LqRDG81jCTnvD8sy7W25RzHRaDNFFbW6wAh4b1kVM0weKcnC04GMLjW8SpLGTEf8siuUmSIwDcSH2bABrvKhKEpqcSCHugkDcFnCIAidVs9kgI%3D; expires=Sat, 25-Aug-2012 15:49:53 GMT; path=/
+      - bufferapp_ci_session=X%2BGxXJdxW2J16kM5ZDvSlxCyWfb2VHq6LxVyR850vWmzmKSorWAYYtCrO7yxSSpCmcJ2ygDtxxArrGiZNXFJjrLUQgp3jCf%2FaIOJe%2B4lgBFDiOEYB6eJGimGXVjhlajV%2FdoyaH9KwYbXS1MrANcwFoWO7CstQdV5y36XsxMgzvaU8DQR75oaQG8ekyUZFYsbBJUtyf0Hjwhg59setErVfOJMmjwrY0Mrs45NIdiq4AhWFXRagB83LMNTRiX6HRJ7h6ccfKurz0rA%2FCI0U43D8Pl7jssnKGy8ZRVxIlLpSYo%3D; expires=Sat, 25-Aug-2012 15:49:53 GMT; path=/
+      - bufferapp_ci_session=5RXwPOR2wcNuhcwRQEQLaz8zzAtVT9%2F2tvF8Yh3LHRDH9Pxv6WEaWQNfVaIrvJIfnKq4HAwxRmLqm5x1qQvZ2gMfNq1Yx1u9A7Vdj1%2FuLMbEbHGiVygYKOl0I%2FuYWkidtN0cUc9hamRiRBZRnOfoZIGwq1NSeAbAqDuaG1QWf%2Bc0UuyOONNEsIJKDL2PB4vxW3BnamhuLnEGBW2i7vAbsb03jJGJTma1YXFtrEQO1v%2FpLoKe1vTjW75Ihnjvk9%2F7vVjRV8sz6jzOY%2BYHV3BRbSSbPjFqvHnMItOAtnJPYU8%3D; expires=Sat, 25-Aug-2012 15:49:53 GMT; path=/
+      content-type: 
+      - application/json;charset=UTF-8
+      x-powered-by: 
+      - PHP/5.3.13
+      connection: 
+      - Close
+      content-length: 
+      - "562"
+    body: 
+      string: "{\"success\":true,\"message\":\"One more tweet in your Buffer. Keep it topped up!\",\"updates\":[{\"_id\":\"501167219190193e33000006\",\"client_id\":\"50105bb8a45f0fa449000042\",\"created_at\":1343317793,\"day\":\"Sunday 29th July\",\"due_at\":1343573100,\"due_time\":\"10:45 am\",\"id\":\"501167219190193e33000006\",\"profile_id\":\"<PROFILE_ID>\",\"profile_service\":\"twitter\",\"status\":\"buffer\",\"text\":\"hello world 1343317793\",\"text_formatted\":\"hello world 1343317793\",\"updated_at\":1343317793,\"user_id\":\"4f201de1512f7e9566000012\",\"via\":\"api\"}],\"buffer_percentage\":7.5,\"buffer_count\":15}"
+    http_version: "1.1"
+  recorded_at: Thu, 26 Jul 2012 15:49:53 GMT
+- request: 
+    method: get
+    uri: https://api.bufferapp.com/1/updates/501167219190193e33000006.json?access_token=1%2F8c33ad941402be1cc78956f0739a9070&profile_ids[]=<PROFILE_ID>
+    body: 
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 200
+      message: Awesome
+    headers: 
+      server: 
+      - Apache/2.2.22 (Amazon)
+      date: 
+      - Thu, 26 Jul 2012 15:49:54 GMT
+      vary: 
+      - Accept-Encoding,User-Agent
+      set-cookie: 
+      - bufferapp_ci_session=JGadapOU7Z3T4VjdtuvNo2DcXAiaOtqXZZkCU0%2FuoCKByNevdasDH4RqCHTcnWZZWatbOeFqnS83BOtLhaQjLFsnihAorY4JTPd1tDt9ctnjjfRfs6nirnwiSAhKZo%2F94UNb1kFJbUNKS6Q7QEXMQM962DtrP8n%2BIhBQL4fLkunFIdhfpnlWYJEllaSSHzYVHUaaDBHWQmvW28RjhNyR2jg%2FDew60DKySlfNHVI7KL31YFmf47ryMrd%2BEpD8vv35oE2Mids2Z%2BPKbqrrZSNxBPwNVvRwyto2CfqpEENjFoI%3D; expires=Sat, 25-Aug-2012 15:49:54 GMT; path=/
+      content-type: 
+      - application/json;charset=UTF-8
+      x-powered-by: 
+      - PHP/5.3.13
+      connection: 
+      - Close
+      content-length: 
+      - "428"
+    body: 
+      string: "{\"_id\":\"501167219190193e33000006\",\"client_id\":\"50105bb8a45f0fa449000042\",\"created_at\":1343317793,\"day\":\"Sunday 29th July\",\"due_at\":1343573100,\"due_time\":\"3:45 pm\",\"id\":\"501167219190193e33000006\",\"profile_id\":\"<PROFILE_ID>\",\"profile_service\":\"twitter\",\"status\":\"buffer\",\"text\":\"hello world 1343317793\",\"text_formatted\":\"hello world 1343317793\",\"updated_at\":1343317793,\"user_id\":\"4f201de1512f7e9566000012\",\"via\":\"api\"}"
+    http_version: "1.1"
+  recorded_at: Thu, 26 Jul 2012 15:49:54 GMT
+recorded_with: VCR 2.2.4
