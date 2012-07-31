@@ -1,6 +1,8 @@
 require 'httparty'
 
 class BufferApp
+  autoload :VERSION, 'buffer_app/version'
+
   include HTTParty
   base_uri 'https://api.bufferapp.com/1'
 
@@ -73,5 +75,4 @@ class BufferApp
   end
 end
 
-require 'buffer_app/version'
 require 'buffer_app/response_parser'
