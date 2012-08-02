@@ -35,8 +35,8 @@ class BufferApp
     }
   end
 
-  def create_update(text)
-    response = post '/updates/create.json', "text" => text
+  def create_update(text, options = {})
+    response = post '/updates/create.json', options.merge("text" => text)
     parse_update response['updates'][0]
   end
 
